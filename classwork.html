@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-guide-concepts-1-production</title>
+  
+
+  <script src="http://code.angularjs.org/snapshot/angular.min.js"></script>
+  
+
+  
+</head>
+  <body >
+    <div ng-app ng-init="name='name',Lname='Lname',dob='YYYY-MM-DD','gender='Male'">
+      <p>
+       <h2>My Biodata</h2>
+      </p>
+      <div>
+        First Name <input type="text" min="0" ng-model="name" placeholder='name'>
+      </div>
+        <div>
+          Last Name: <input type="text" min="0" ng-model="Lname" placeholder='Lastname'>
+   </div>
+         <div>
+             Date of Birth: <input type="number" min="0" ng-model='dob'>
+</div>
+           <div>
+            Gender: <select ng-model="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    </select>
+                  
+            </div>
+</br>
+  <div> Name: {{name}}</div>
+  <div> LastName: {{Lname}}</div>
+  <div>Date of Birth: {{dob}}</div>
+  <div>Gender: {{gender}}</div>
+  <div>FullName: {{name}} {{Lname}}</div>
+  <div>Age:{{dob>0 ? '2018'-dob : ''}}</div>
+  </div>
